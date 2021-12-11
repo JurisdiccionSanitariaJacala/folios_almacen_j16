@@ -102,6 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            Text('SALIDA DE VALES DE ALMACEN JURISDICCIONAL',style: Theme.of(context).textTheme.headline6)
           ],
         ),
       ),
