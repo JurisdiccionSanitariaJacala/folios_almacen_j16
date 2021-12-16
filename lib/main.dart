@@ -50,6 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+
+  Widget botonGuardar(){
+    return const ElevatedButton(onPressed: null, child: const Text('BOTON GUARDAR DESDE FUNCION'));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButton(
                   onPressed: () => { }, //metodo para cambiar a otra pagina
                   child: const Text('GENERAR VALE')
-                  )
+                  ),
+                  botonGuardar()
               ]
             )
           ],
