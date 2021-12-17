@@ -1,0 +1,9 @@
+{
+    "medicamentos": [{
+        "keyword": "Paracetamol",
+        "id": 1,
+        "autoCompleteTerm": "Paracetamol tabletas",
+        "clave": "010.000.0104.00",
+        "presentacion": "Envase con 30 tabletas."
+    }]
+}
