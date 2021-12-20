@@ -59,11 +59,11 @@ class _AutoCompleteState extends State<AutoComplete> {
               setState(() => searchTextField!.textField.controller!.text =
                   item.autoCompleteTerm!);
             },
-            style: TextStyle(color: Color.black, fontSize: 16.0),
+            style: TextStyle(color: Colors.black, fontSize: 16.0),
             suggestions: MedicamentosViewModel.medicamentos,
             decoration: InputDecoration(
                 suffixIcon: Container(width: 85.0, height: 60.0),
-                contentPadding: EdgeInserts.fromLTRB(10.0, 30.0, 10.0, 20.0),
+                contentPadding: EdgeInsets.fromLTRB(10.0, 30.0, 10.0, 20.0),
                 filled: true,
                 hintText: 'Buscar insumo',
                 hintStyle: TextStyle(color: Colors.black)))
