@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'widgets/autocomplete.dart';
+import 'widgets/medicamentos.dart'; 
 
+//https://medium.com/flutter-community/implementing-auto-complete-search-list-a8dd192bd5f6
 void main() {
   runApp(const MyApp());
 }
