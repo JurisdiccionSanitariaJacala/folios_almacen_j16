@@ -47,16 +47,16 @@ class _AutoCompleteState extends State<AutoComplete> {
               );
             },
             itemFilter: (item, query) {
-              return item.autoCompleteTerm
+              return item.autoCompleteTerm!
                   .toLowerCase()
                   .startsWith(query.toLowerCase());
             },
             itemSorter: (a, b) {
-              return a.autoCompleteTerm.compareTo(b.autoCompleteTerm);
+              return a.autoCompleteTerm!.compareTo(b.autoCompleteTerm!);
             },
             key: key,
             itemSubmitted: (item) {
-              setState(() => searchTextField!.textField.controller.text =
+              setState(() => searchTextField!.textField.controller!.text =
                   item.autoCompleteTerm!);
             },
             style: TextStyle(color: Color.black, fontSize: 16.0),
