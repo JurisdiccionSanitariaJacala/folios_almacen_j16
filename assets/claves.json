@@ -13,6 +13,13 @@
             "autoCompleteTerm": "Ibuprofeno tabletas",
             "clave": "010.000.0110.00",
             "presentacion": "Envase con 30 tabletas."
+        },
+        {
+            "keyword": "Ibuprofeno",
+            "id": 3,
+            "autoCompleteTerm": "Ibuprofeno suspensión",
+            "clave": "010.000.0115.00",
+            "presentacion": "Envase para 120 ml."
         }
     ]
 }

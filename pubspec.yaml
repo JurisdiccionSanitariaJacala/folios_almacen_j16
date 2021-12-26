@@ -45,7 +45,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
-  autocomplete_textfield: ^1.6.4
+  autocomplete_textfield: ^1.7.3
 
 
 # For information on the generic Dart part of this file, see the

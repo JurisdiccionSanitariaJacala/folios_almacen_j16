@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/autocomplete.dart';
-import 'widgets/medicamentos.dart'; 
+import 'package:folios_almacen_j16/widgets/autocomplete.dart';
 
 //https://medium.com/flutter-community/implementing-auto-complete-search-list-a8dd192bd5f6
 void main() {
@@ -68,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            AutoComplete(), //llama al metodo AutoComplete
             const Text('SALIDA DE VALES DE ALMACEN JURISDICCIONAL'),
             Column(
               children: <Widget>[

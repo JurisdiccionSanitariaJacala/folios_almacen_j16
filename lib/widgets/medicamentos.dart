@@ -31,6 +31,7 @@ class Medicamentos{
 
 class MedicamentosViewModel{
   static List<Medicamentos>? medicamentos;
+
   static Future loadMedicamentos() async{
     try{
       medicamentos = [];

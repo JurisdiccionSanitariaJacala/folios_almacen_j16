@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:autocomplete_textfield/autocomplete_textfield.dart';
-import 'medicamentos.dart';
+import 'package:folios_almacen_j16/widgets/medicamentos.dart';
 
 class AutoComplete extends StatefulWidget {
   @override
@@ -8,10 +9,11 @@ class AutoComplete extends StatefulWidget {
 }
 
 class _AutoCompleteState extends State<AutoComplete> {
-  _AutoCompleteState();
+  
   AutoCompleteTextField? searchTextField;
   TextEditingController controller = TextEditingController();
   GlobalKey<AutoCompleteTextFieldState<Medicamentos>> key = GlobalKey();
+  _AutoCompleteState();
 
   void _loadData() async {
     await MedicamentosViewModel.loadMedicamentos();
@@ -20,6 +22,7 @@ class _AutoCompleteState extends State<AutoComplete> {
   @override
   void initState() {
     _loadData();
+    print('initState de AutoComplete');
     super.initState();
   }
 
@@ -41,7 +44,7 @@ class _AutoCompleteState extends State<AutoComplete> {
                     padding: EdgeInsets.all(15.0),
                   ),
                   Text(
-                    item.keyword!,
+                    item.presentacion!,
                   )
                 ],
               );
